@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Hanken Grotesk", "Times New Romans";
+    background-color: hsl(221, 100%, 96%);
+    font-size: 18px;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+
+.overall{
+    box-shadow: 2px 5px 4px 4px rgb(128, 128, 128, 0.12);
+    display: flex;
+    width: 34.375rem;
+    margin: 0 auto;
+    border-radius: 1.875rem;
+    }
+
+
+
+.main{ 
+    background-color: hsl( 0, 0%, 100%);
+    display: flex;
+    border-radius: 1.875rem;
+    width: 100%; /*width: 34.375rem*/        
+    height: auto;
+    }
+
+
+    /*RESULT STYLING */
+.result{
+            min-width: 50%;
+            color: hsl( 0, 0%, 100%);
+            height: 100%;  
+            border-radius: 1.875rem;
+            text-align: center;
+            padding: 0rem;
+            background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%) );          
+        }
+
+
+
+.result h1{
+            font-size: larger;
+            padding-top: 1.875rem;
+        }
+
+
+
+.circle{
+            background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+            border-radius: 50%;
+            margin: auto;
+            margin-top: 1.25rem;
+            height: 9.375rem;
+            width: 9.375rem;
+            padding: .625rem;
+            align-content: center;
+}
+
+
+.comment{
+    font-size: larger;    
+    padding: .3125rem;
+}
+
+
+.comment1{
+    margin-top: 0rem;
+    padding: .625rem; 
+}
+
+
+.value{
+            font-weight: bold;
+            font-size: 3.5rem;
+            text-align: center;
+            justify-content: center;
+}
+
+.value-x{
+        justify-content: center;
+        text-align: center;
+}
+
+
+/*SUMMARY STYLING*/
+
+
+.summary h1{
+            font-size: larger;
+            text-align: justify;
+            margin: 0 auto;
+            padding-bottom: .625rem;
+        }
+
+
+.summary{
+    max-width: 50%;
+    background-color: hsl(0, 0%, 100%); 
+    margin: 1.875rem 2rem;
+    align-items: center;
+}
+
+
+.part1{
+    color:hsl(0, 100%, 67%);
+    background-color: hsl(0, 100%, 67%, 0.09);
+    display: flex;
+    flex-direction: row;
+    margin: 1.25rem auto;
+    padding: .4375rem;
+    border-radius: .625rem;
+    min-width: 100%;
+}
+
+
+.part2{
+    color: hsl(39, 100%, 56%);
+    background-color: hsl(39, 100%, 56%, 0.09);
+    display: flex;
+    flex-direction: row;
+    margin: 1.25rem auto;
+    padding: .4375rem;
+    border-radius: .625rem;
+    text-align: justify;
+    min-width: 100%;
+}
+
+
+.part3{
+    color: hsl(166, 100%, 37%);
+    background-color: hsl(166, 100%, 37%, 0.09);
+    display: flex;
+    flex-direction: row;
+    padding: .4375rem;
+    margin: 1.25rem auto;
+    border-radius: .625rem;
+    text-align: justify;
+    min-width: 100%;
+}
+
+
+.part4{
+    color: hsl(234, 85%, 45%);
+    background-color: hsl(234, 85%, 45%, 0.09);
+    display: flex;
+    flex-direction: row;
+    margin: 1.25rem auto;
+    padding: .4375rem;
+    border-radius: .625rem;
+    text-align: justify;
+    min-width: 100%;
+}
+
+
+.space{
+    margin-left: auto;
+    padding: .0625rem;
+    color: hsl(0, 0%, 1%);
+    
+}
+
+.value1{
+    margin-left: 12px;
+    text-align: center;
+}
+
+.value2{
+    margin-left: 12px;
+}
+
+.value3{
+    margin-left: 12px;
+}
+
+.value4{
+    margin-left: 12px;
+}
+
+/*Button Styling*/
+button{
+        border: hsl(224, 30%, 27%);
+        margin: auto;
+        padding: auto;
+        width: 220px;
+        height: 35px;
+        border-radius: 20px;
+        background-color: hsl(224, 30%, 27%);
+        font-size: 16px;
+        color: hsl(0, 0%, 100%);
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: hsl(252, 100%, 67%);
+    transition: .2s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==========>>|| MOBILE RESPONSIVENESS ||<<==========*/
+@media screen and (max-width: 375px){
+
+body{
+    width: 100%;
+    max-width: 23.4375rem;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+
+}
+
+.overall{
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.main{
+    width: 100%;
+    max-width: 23.4375rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0rem; 
+
+}
+
+    /*RESULT STYLING */
+.result{ 
+            border-top-right-radius: 0rem;
+            border-top-left-radius: 0rem;          
+        }
+
+
+
+.result h1{
+            font-size: large;
+            padding-top: 1.875rem;
+        }
+
+
+
+.circle{
+            height: 6.375rem;
+            width: 6.375rem;
+}
+
+
+.comment{
+    font-size: medium;    
+}
+
+
+.comment1{
+    font-size: small;
+    width: 60%;
+    margin: 0 auto 1.67rem auto;
+}
+
+
+.value{
+            font-size: 2.5rem;
+}
+
+.value-x{
+        font-size: small;
+}
+
+
+
+/*SUMMARY STYLING*/
+
+.summary h1{
+    font-size: large;
+    text-align: justify;
+    margin: 0;
+    padding: .625rem 0rem .625rem 0rem; /*top right bottom left*/
+}
+
+
+.summary{
+    min-width: 85%;
+    background-color: hsl(0, 0%, 100%); 
+    margin: 2rem auto 2.5rem auto;
+    align-items: center;
+}
+
+.part1 ,.part2,.part3,.part4{
+    padding: .811rem;
+    font-size: medium;
+}
+
+.value1, .value2, .value3, .value4{
+    font-weight: bold;
+}
+
+/*Button Styling*/
+button{
+        margin: 1rem auto 0 auto; /*top right bottom left*/
+        padding: auto;
+        width: 100%;
+        height: 2.875rem;
+        font-size: .875rem;
+        border-radius: 1.875rem;
+}
+
+
+}

@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.google.com/specimen/Young+Serif');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsla(30, 54%, 90%, 5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+    font-size: 1rem;
+}
+
+.card{
+    padding: 2.25rem;
+    width: 43rem;
+    border-radius: .925rem;
+    background-color: hsl(0, 0%, 100%);
+}
+
+img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 2/1;
+    display: grid;
+    place-items: center;
+    border-radius: .625rem;
+}
+
+
+h1, h2{
+    font-family: 'Young serif', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+p, li{
+    font-family: 'outfit', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+h3{
+    font-size: 1.125rem;
+    font-weight: 600;
+    font-family: 'outfit', serif;
+}
+
+table, td{
+    font-family: 'outfit', serif;
+}
+
+/*
+    <!--Heading-->
+*/
+.title-1{
+    margin: 2.5rem 0rem 0rem;
+    text-align: start;
+}
+
+/*
+.title-1 h1{
+}
+*/
+
+.title-1 p{
+    margin: 1rem 0rem 0rem;
+    line-height: 1.5rem;
+}
+
+/*
+    <!--Preparation Time-->
+*/
+
+.title-2 {
+    text-align: start;
+    border-radius: .625rem;
+    line-height: 1.5rem;
+    padding: 1rem;
+    margin: 2rem 0rem 0rem;
+    background-color: hsl(330, 100%, 98%);
+}
+
+.title-2 h3{
+    color: hsl(332, 51%, 32%);
+}
+
+.list-section2 li::marker{
+    color: hsl(332, 51%, 32%);
+    font-size: small;
+}
+
+.list-section2{
+    margin: .5rem 0rem 0rem 1.5rem;
+}
+
+.title-2 ul{
+    padding-right: 2.25rem;
+    padding-left: .5rem;
+}
+/*
+    <!--Ingredients-->
+*/
+
+.title-3{
+    margin: 2rem 0rem 0rem;
+    text-align: start;
+}
+
+.title-3 h2{
+    color: hsl(14, 45%, 36%);
+}
+
+.list-section3{
+    margin: 1rem 0rem 1rem 1rem;
+}
+
+.list-section3 li::marker{
+    color: hsl(14, 45%, 36%);
+    font-size: small;
+}
+
+.title-3 ul{
+    padding-right: 2.25rem;
+    padding-left: .15rem;
+}
+
+/*
+    <!--Instructions-->
+*/
+
+.title-4{
+    line-height: 1.5rem;
+    text-align: start;
+    margin: 2rem 0rem 2rem 0rem;
+}
+
+.title-4 h2{
+    color: hsl(14, 45%, 36%);
+}
+
+.list-section4{
+    margin: 1rem 0rem 0rem 1.5rem;
+}
+
+ol li{
+    padding-right: 2.25rem;
+    padding-left: .5rem;
+}
+
+.list-section4 li{
+    margin-bottom: 1rem;
+}
+
+.list-section4 li:last-child{
+    margin-bottom: 0;
+}
+
+.list-section4 li::marker{
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+
+
+/*
+    <!--Nutrition Table-->
+*/
+.title-5{
+    margin: 2rem 0rem 0rem;
+
+}
+
+.title-5 h2{
+    margin-bottom: 1rem;
+    color: hsl(14, 45%, 36%);
+}
+
+
+table{
+    margin: 1rem 0rem 0rem 0rem;
+    width: 100%;
+}
+
+table, tr, td{
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    border-collapse: collapse;
+    padding: .9375rem 0rem .9375rem 2rem;
+}
+
+.Tdata{
+    font-weight: 700;
+    color: hsl(14, 45%, 36%);
+}
+
+.Tdata,:last-child{
+    border-bottom: none;
+}
+
+.Tdata2,:last-child{
+    border-bottom: none;
+}
+
+hr{
+    color: hsl(30, 10%, 34%);
+}
+
+
+
+
+
+/*Mobile Responsiveness*/
+
+/*
+Device Breakpoint--->> Mobile [small=375px]
+*/
+@media screen and (max-width: 375px){
+    body{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        min-width: 22.8125rem;
+        height: auto;
+        overflow-x: hidden;
+        
+    }
+    
+    .card{
+        border-radius: 0rem;
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+
+img{
+    border-radius: 0rem;
+    width: 100%;
+    height: auto;
+}
+
+.mobile-container{
+    padding: 2.65rem;
+}
+
+
+/*Title-1==>> Simple Omelette Recipe*/
+.title-1{
+    text-align: start;
+    margin: 0rem;
+}
+
+.title-1 p{
+    width: 100%;
+    text-align: start;
+}
+
+
+
+/*Title-2==>> Preparation Time*/
+.title-2 ul{
+    padding-right: 2.5rem;
+    text-align: start;
+}
+
+.list-section2{
+    margin: .5rem 0rem 0rem 1rem;
+}
+
+/*Title-3==>> Ingredients*/
+
+    .title-3{
+    margin: 2rem 0rem 0rem;
+    line-height: 1.5rem;
+    text-align: start;
+}
+
+/*
+Title-4==>> Instructions
+*/
+
+.title-4{
+    text-align: start;
+}
+
+.title-4 ol li{
+    padding-right: 0.125rem;
+    padding-left: .5rem;
+}
+
+.list-section4{
+    margin: 1rem 0rem 0rem 1.1rem;
+    padding: 0rem;
+}
+
+.list-section4 li{
+    font-size: 16px;
+    padding: 0rem;
+    width: 100%;
+    text-align: start;
+}
+
+
+
+/*Title-5==>> Nutrition*/
+.title-5{
+    text-align: start;
+    line-height: 1.485rem;
+}
+}

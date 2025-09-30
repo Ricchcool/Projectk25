@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body{
+    font-family: 'Inter', san-serif;
+    font-size: .875rem;
+    background-color: hsl(0, 0%, 12%);
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 100%;
+    max-width: 18.75rem;
+    /*min-height: 65vh;*/
+    height: auto;
+    background-color: hsl(0, 0%, 20%);
+    text-align: center;
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+img{
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    width: 4.75rem;
+    height: auto;
+}
+
+
+.profile{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.875rem;
+}
+
+
+
+.heading{
+    margin-top: 2.5rem;
+}
+
+.heading h1{
+    padding: .3125rem;
+    color: hsl(0, 0%, 100%);
+    }
+    
+
+
+.location{
+        padding: .3125rem;
+        font-weight: 700;
+        color: hsl(75, 94%, 57%);
+}
+
+
+
+.bio{
+        color: hsl(0, 0%, 100%);
+        padding-bottom: .5rem;
+        margin-top: .9375rem;
+        font-size: small;
+}
+
+
+    /*Button styling*/
+.links{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: .6rem;
+    margin-bottom: 1.5625rem;
+    padding: .3125rem;
+}
+    
+    
+.links a{
+    padding: .65rem;
+    text-decoration: none;
+}
+
+
+a{
+    background-color: hsl(0, 0%, 12%);
+    color: hsl(0, 0%, 100%);
+    width: 95%;
+    margin: 0 auto;
+    border-radius: .5rem;
+    border: none;
+    font-weight: 400;
+}
+
+
+a:hover{
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    background-color: hsl(75, 94%, 57%);
+}
+
+
+
+    /*Mobile Responsiveness*/
+/*
+Breakpoint Device
+Phone (Medium): 375px
+*/
+
+@media screen and (max-width: 375px){
+body{
+    width: 100%;
+    max-width: 23.4375rem;
+    height: auto;
+    font-size: smaller;
+}
+
+.card{
+    font-size: smaller;
+    width: 70%;
+    height: auto;
+    max-width: none;
+}
+
+.bio{
+    font-size: .75rem;
+}
+
+}

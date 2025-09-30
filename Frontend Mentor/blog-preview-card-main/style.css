@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Figtree, sans-serif;
+    background-color: hsl(47, 88%, 63%);
+    font-size: 1rem;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+
+.main{
+    border: black solid 1px;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 25rem;
+    height: auto;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 9px 9px .5px hsl(0, 0%, 7%);
+}
+
+
+svg{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+
+
+.heading, h2{
+    margin: 0 auto;
+}
+
+
+.date p{
+    margin: .625rem 0rem;
+    font-size: 1rem;
+}
+
+.heading{
+    border-radius: .3125rem;
+    background-color: hsl(47, 88%, 63%);
+    width: 7.5rem;
+    height: 2.1875rem;
+    margin: .625rem 0rem;
+}
+
+.heading h2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1{
+    display: flex;
+    justify-content: flex-start;
+    margin: .9375rem 0rem;
+}
+
+.summary{
+    text-align: start;
+    max-width: 85%;
+    color: hsl(0, 0%, 42%);
+    align-items: center;
+    margin: 0rem 1.5625rem 1.5625rem 0rem;
+    font-size: 1rem;
+}
+
+.name{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+}
+
+.name img{
+    width: 10%;
+    height: 10%;
+}
+
+
+.name h3{
+    margin-left: 22px;
+    font-size: .875rem;
+    align-self: center;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+
+
+/*Mobile Responsiveness
+
+Breakpoint Device: 375px (Mobile Medium)
+
+/**/
+
+@media screen and (max-width: 375px) {
+
+
+body{
+    width: 100%;
+    max-width: 23.4375rem;
+    height: auto;
+}
+
+.main{
+    padding: 1rem;
+    width: 70%;
+    height: auto;
+    max-width: none;
+}
+
+
+.heading{
+    display: flex;
+    width: 5.5rem;
+    height: 1.5rem;
+    margin: .625rem 0rem;
+}
+
+
+.heading h2{
+    font-size: .875rem;
+}
+
+
+h1{
+    display: flex;
+    width: 100%;
+    height: auto;
+    font-size: 1.1rem;
+}
+
+
+.date p{
+    font-size: .7rem;
+}
+
+
+.summary{
+    text-align: start;
+    max-width: 100%;
+    font-size: .72rem;
+}
+
+
+.name h3{
+    margin-left: .75rem;
+    font-size: .75rem;
+    align-self: center;
+}
+}
